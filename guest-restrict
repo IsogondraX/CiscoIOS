@@ -1,0 +1,10 @@
+RP/0/RSP0/CPU0:TLNX-ORD-CH1-CER01(config)#do show access-lists ACL.311.GUEST
+Wed Jun 29 15:46:56.970 UTC
+ipv4 access-list ACL.311.GUEST
+ 10 permit ipv4 host 172.31.254.16 172.16.0.0 0.15.255.255
+ 20 permit ipv4 host 172.31.254.1 172.16.0.0 0.15.255.255
+ 30 permit ipv4 host 172.31.254.4 172.16.0.0 0.15.255.255
+ 40 deny ipv4 172.31.254.0 0.0.1.255 10.0.0.0 0.255.255.255
+ 50 deny ipv4 172.31.254.0 0.0.1.255 172.16.0.0 0.15.255.255
+ 60 deny ipv4 172.31.254.0 0.0.1.255 192.168.0.0 0.0.255.255
+ 70 permit ipv4 any any
